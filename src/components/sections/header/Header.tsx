@@ -27,9 +27,9 @@ const Header = () => {
   };
 
   return (
-    <section>
-      <div className="section flex justify-center items-center gap-10 border-[2px] rounded-xl mt-1">
-        <nav className="flex justify-center items-center py-4">
+    <section className="fixed top-1 w-full">
+      <div className="section flex justify-center items-center gap-10 border-[2px] rounded-xl mt-1 backdrop-blur-sm light:bg-gray-50/50">
+        <nav className="flex justify-center items-center py-[1rem]">
           <ul className="flex gap-7 cursor-pointer">
             <li
               onMouseEnter={() => handleMouseEnter(0)}
