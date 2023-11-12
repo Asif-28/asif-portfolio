@@ -27,7 +27,7 @@ const Header = () => {
   };
 
   return (
-    <section className="fixed top-1 w-full">
+    <section className="sticky z-10 top-1 w-full">
       <div className="section flex justify-center items-center gap-10 border rounded-xl mt-1 backdrop-blur-sm light:bg-gray-50/50">
         <nav className="flex justify-center items-center py-[1rem]">
           <ul className="flex gap-7 cursor-pointer">
@@ -51,6 +51,13 @@ const Header = () => {
               className="flex flex-col items-center gap-1 h-[30px]"
             >
               Portfolio <div className={underlineClass(2)} />
+            </li>
+            <li
+              onMouseEnter={() => handleMouseEnter(3)}
+              onMouseLeave={handleMouseLeave}
+              className="flex flex-col items-center gap-1 h-[30px]"
+            >
+              Resume <div className={underlineClass(3)} />
             </li>
           </ul>
         </nav>
