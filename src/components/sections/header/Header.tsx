@@ -3,10 +3,12 @@ import { useTheme } from "next-themes";
 import { ModeToggle } from "@/components/ui/toggle-mode";
 import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
 const Header = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
   const [showMore, setshowMore] = useState(false);
+  const [active, setActive] = useState("Home");
 
   const { theme } = useTheme();
 
@@ -73,26 +75,67 @@ const Header = () => {
         </nav>
         <div className="sm:hidden ">
           <MenuIcon
+            className={`${showMore ? "hidden" : "block"} `}
+            sx={{ fontSize: "1.7rem" }}
+            onClick={() => setshowMore(!showMore)}
+          />
+          <CloseIcon
+            className={`${showMore ? "block" : "hidden"} `}
             sx={{ fontSize: "1.7rem" }}
             onClick={() => setshowMore(!showMore)}
           />
           {showMore && (
             <div className="absolute text-[#00000] top-14 bg-slate-300 dark:bg-slate-600 rounded-md w-[260px] mx-auto px-4 py-6 left-2">
               <nav className="flex justify-center items-center py-[1rem] sm:hidden">
-                <ul className="flex flex-col gap-7 cursor-pointer">
-                  <li className="flex flex-col items-center gap-1 h-[30px]">
+                <ul className="flex flex-col items-center justify-center gap-7 cursor-pointer">
+                  <li
+                    onClick={() => setActive("Home")}
+                    className={`${
+                      active === "Home"
+                        ? "dark:bg-slate-800 bg-slate-400 px-3 py-[.3rem] rounded-md flex justify-center items-center h-[30px]"
+                        : "rounded-md flex justify-center items-center h-[30px]"
+                    }`}
+                  >
                     Home
                   </li>
-                  <li className="flex flex-col items-center gap-1 h-[30px]">
-                    Contact <div />
+                  <li
+                    onClick={() => setActive("Contact")}
+                    className={`${
+                      active === "Contact"
+                        ? "dark:bg-slate-800 bg-slate-400 px-3 py-[.3rem] rounded-md flex justify-center items-center h-[30px]"
+                        : "rounded-md flex justify-center items-center h-[30px]"
+                    }`}
+                  >
+                    Contact
                   </li>
-                  <li className="flex flex-col items-center gap-1 h-[30px]">
+                  <li
+                    onClick={() => setActive("Portfolio")}
+                    className={`${
+                      active === "Portfolio"
+                        ? "dark:bg-slate-800 bg-slate-400 px-3 py-[.3rem] rounded-md flex justify-center items-center h-[30px]"
+                        : "rounded-md flex justify-center items-center h-[30px]"
+                    }`}
+                  >
                     Portfolio
                   </li>
-                  <li className="flex flex-col items-center gap-1 h-[30px]">
+                  <li
+                    onClick={() => setActive("Resume")}
+                    className={`${
+                      active === "Resume"
+                        ? "dark:bg-slate-800 bg-slate-400 px-3 py-[.3rem] rounded-md flex justify-center items-center h-[30px]"
+                        : "rounded-md flex justify-center items-center h-[30px]"
+                    }`}
+                  >
                     Resume
                   </li>
-                  <li className="flex flex-col items-center gap-1 h-[30px]">
+                  <li
+                    onClick={() => setActive("Github")}
+                    className={`${
+                      active === "Github"
+                        ? "dark:bg-slate-800 bg-slate-400 px-3 py-[.3rem] rounded-md flex justify-center items-center h-[30px]"
+                        : "rounded-md flex justify-center items-center h-[30px]"
+                    }`}
+                  >
                     Github
                   </li>
                 </ul>

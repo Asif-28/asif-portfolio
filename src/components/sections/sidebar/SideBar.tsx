@@ -37,29 +37,35 @@ const SideBar = () => {
             ref={el}
           ></h1>
         </div>
-        <div className="hidden sm:flex flex-col items-center justify-end gap-6 sm:gap-8  sm:pb-6 xl:pb-10 h-full cursor-pointer">
+        <div className="hidden sm:flex flex-col items-center justify-end gap-6 sm:gap-8  sm:pb-6 xl:pb-10 h-full ">
           <InstagramIcon
             sx={{ fontSize: "1.7rem" }}
-            className="hover:animate-bounce"
+            className="cursor-pointer hover:animate-bounce"
           />
           <GitHubIcon
             sx={{ fontSize: "1.7rem" }}
-            className="hover:animate-spin"
+            className="cursor-pointer hover:animate-spin"
           />
           <LinkedInIcon
             sx={{ fontSize: "1.7rem" }}
-            className="hover:animate-bounce"
+            className="cursor-pointer hover:animate-bounce"
           />
           <EmailIcon
             sx={{ fontSize: "1.7rem" }}
-            className="hover:animate-spin"
+            className="cursor-pointer hover:animate-spin"
           />
         </div>
-        <div className="sm:hidden ml-1 bg-slate-300 dark:bg-slate-600 backdrop-blur-sm flex flex-col items-center justify-between gap-6  cursor-pointer h-48 py-4 rounded-xl w-8 mt-20">
-          <InstagramIcon sx={{ fontSize: "1.4rem" }} />
-          <GitHubIcon sx={{ fontSize: "1.4rem" }} />
-          <LinkedInIcon sx={{ fontSize: "1.4rem" }} />
-          <EmailIcon sx={{ fontSize: "1.4rem" }} />
+        <div className="sm:hidden ml-1 bg-slate-300 dark:bg-slate-600 backdrop-blur-sm flex flex-col items-center justify-between gap-6 h-48 py-4 rounded-xl w-8 mt-20">
+          <InstagramIcon
+            className="cursor-pointer"
+            sx={{ fontSize: "1.4rem" }}
+          />
+          <GitHubIcon className="cursor-pointer" sx={{ fontSize: "1.4rem" }} />
+          <LinkedInIcon
+            className="cursor-pointer"
+            sx={{ fontSize: "1.4rem" }}
+          />
+          <EmailIcon className="cursor-pointer" sx={{ fontSize: "1.4rem" }} />
         </div>
       </div>
     </section>
