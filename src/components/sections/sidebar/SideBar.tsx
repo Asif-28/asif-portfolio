@@ -37,7 +37,7 @@ const SideBar = () => {
             ref={el}
           ></h1>
         </div>
-        <div className="flex flex-col items-center justify-end gap-8 pb-6 xl:pb-10 h-full cursor-pointer">
+        <div className="flex flex-col items-center justify-end gap-6 sm:gap-8  sm:pb-6 xl:pb-10 h-full cursor-pointer">
           <InstagramIcon
             sx={{ fontSize: "1.7rem" }}
             className="hover:animate-bounce"
