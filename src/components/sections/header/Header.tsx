@@ -7,7 +7,7 @@ import CloseIcon from "@mui/icons-material/Close";
 
 const Header = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
-  const [showMore, setshowMore] = useState(false);
+  const [showMore, setShowMore] = useState(false);
   const [active, setActive] = useState("Home");
 
   const { theme } = useTheme();
@@ -74,16 +74,18 @@ const Header = () => {
           </ul>
         </nav>
         <div className="sm:hidden ">
-          <MenuIcon
-            className={`${showMore ? "hidden" : "block"} `}
-            sx={{ fontSize: "1.7rem" }}
-            onClick={() => setshowMore(!showMore)}
-          />
-          <CloseIcon
-            className={`${showMore ? "block" : "hidden"} `}
-            sx={{ fontSize: "1.7rem" }}
-            onClick={() => setshowMore(!showMore)}
-          />
+          {showMore === true ? (
+            <CloseIcon
+              sx={{ fontSize: "1.7rem" }}
+              onClick={() => setShowMore(!showMore)}
+            />
+          ) : (
+            <MenuIcon
+              sx={{ fontSize: "1.7rem" }}
+              onClick={() => setShowMore(!showMore)}
+            />
+          )}
+
           {showMore && (
             <div className="absolute text-[#00000] top-14 bg-slate-300 dark:bg-slate-600 rounded-md w-[260px] mx-auto px-4 py-6 left-2">
               <nav className="flex justify-center items-center py-[1rem] sm:hidden">
