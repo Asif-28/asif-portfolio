@@ -18,7 +18,7 @@ const About = () => {
           src={`/IMG_7155.JPG`}
           alt="image-portfolio"
         />
-        <div className="sm:w-4/6 px-3 space ">
+        <div className="sm:w-4/6 px-3 space">
           <h1 className="text-2xl sm:text-4xl pb-4 font-semibold">Hey!!</h1>
           <p className="text-[15px] sm:text-xl tracking-wider leading-relaxed font-light">
             I&apos;m Passionate and dedicated full-stack Mern developer with

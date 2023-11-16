@@ -4,6 +4,8 @@ import { ModeToggle } from "@/components/ui/toggle-mode";
 import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import Typed from "typed.js";
+import { useEffect, useRef } from "react";
 
 const Header = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -30,10 +32,30 @@ const Header = () => {
         ? "bg-black w-full h-[2px] rounded-3xl"
         : "hidden";
   };
+  const el = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["I'm Freelancer", "FullStack Developer", "Mern Developer"], // Strings to display
+      // Speed settings, try diffrent values untill you get good results
+      startDelay: 300,
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 100,
+      smartBackspace: true,
+      loop: true,
+      showCursor: false,
+    });
+
+    // Destropying
+    return () => {
+      typed.destroy();
+    };
+  }, []);
 
   return (
-    <section className="sticky z-10 top-1 w-full px-8">
-      <div className="section flex pl-12 sm:pl-0 sm:justify-center items-center gap-10 border rounded-xl mt-1 backdrop-blur-sm light:bg-gray-50/50 py-1 sm:py-0 ">
+    <section className="sticky z-10 top-1 w-full px-4">
+      <div className="section flex justify-between px-3 sm:px-0 sm:justify-center items-center gap-10 border rounded-xl mt-1 backdrop-blur-sm light:bg-gray-50/50 py-1 sm:py-0 ">
         <nav className="sm:flex justify-center items-center py-[1rem] hidden">
           <ul className="flex gap-7 cursor-pointer">
             <li
@@ -73,6 +95,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+
         <div className="sm:hidden ">
           {showMore === true ? (
             <CloseIcon
@@ -87,7 +110,7 @@ const Header = () => {
           )}
 
           {showMore && (
-            <div className="absolute text-[#00000] top-14 bg-slate-300 dark:bg-slate-600 rounded-md w-[260px] mx-auto px-4 py-6 left-2">
+            <div className="absolute text-[#00000] top-14 bg-slate-300 dark:bg-slate-600 rounded-md w-[260px] mx-auto px-4 py-6 left-8">
               <nav className="flex justify-center items-center py-[1rem] sm:hidden">
                 <ul className="flex flex-col items-center justify-center gap-7 cursor-pointer">
                   <li
@@ -144,6 +167,12 @@ const Header = () => {
               </nav>
             </div>
           )}
+        </div>
+        <div className="sm:hidden">
+          <h1
+            className="text-xl whitespace-nowrap font-semibold tracking-wide"
+            ref={el}
+          ></h1>
         </div>
         <div>
           <ModeToggle />
