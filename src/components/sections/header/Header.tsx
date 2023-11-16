@@ -36,7 +36,7 @@ const Header = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["I'm Freelancer", "FullStack Developer", "Mern Developer"], // Strings to display
+      strings: ["I'm Freelancer", "FullStack Dev", "Mern Dev"], // Strings to display
       // Speed settings, try diffrent values untill you get good results
       startDelay: 300,
       typeSpeed: 100,
@@ -170,7 +170,7 @@ const Header = () => {
         </div>
         <div className="sm:hidden">
           <h1
-            className="text-xl whitespace-nowrap font-semibold tracking-wide"
+            className="text-base whitespace-nowrap font-semibold tracking-wide"
             ref={el}
           ></h1>
         </div>
