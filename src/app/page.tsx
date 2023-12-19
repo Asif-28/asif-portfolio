@@ -1,4 +1,4 @@
-import { About, TechStack } from "@/components/sections/HomePage";
+import { About, Projects, TechStack } from "@/components/sections/HomePage";
 import SideBar from "@/components/sections/sidebar/SideBar";
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
       <SideBar />
       <About />
       <TechStack />
+      <Projects />
     </main>
   );
 }

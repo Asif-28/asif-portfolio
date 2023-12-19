@@ -3,7 +3,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <section className="section ">
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-8 py-8 sm:py-12 sm:px-2">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-8 py-8 sm:py-12 sm:px-2 spaceMax">
         <Image
           className="rounded-xl hidden sm:block"
           height={200}

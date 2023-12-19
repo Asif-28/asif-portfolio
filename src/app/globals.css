@@ -66,3 +66,6 @@
 .space {
   @apply ml-9;
 }
+.spaceMax {
+  @apply ml-12 lg:ml-0;
+}

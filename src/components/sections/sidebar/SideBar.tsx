@@ -30,7 +30,7 @@ const SideBar = () => {
   }, []);
   return (
     <section className="section fixed top-[5.1rem] xl:left-40 z-50">
-      <div className="h-[calc(100vh-100px)] w-12 rounded-2xl flex flex-col ">
+      <div className="h-[calc(100vh-100px)] w-12 rounded-2xl flex flex-col">
         <div className="hidden lg:block">
           <h1
             className="text-3xl -rotate-90 mt-[17.5rem] whitespace-nowrap font-semibold tracking-wide  "
