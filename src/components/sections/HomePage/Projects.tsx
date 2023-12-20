@@ -3,11 +3,11 @@ import Image from "next/image";
 const Projects = () => {
   return (
     <div className="section py-8 ">
-      <h1 className="text-2xl sm:text-4xl pb-4 sm:pb-8 font-semibold pl-3 space">
+      <h1 className="text-2xl sm:text-4xl pb-4 sm:pb-8 font-semibold pl-4 ">
         Projects
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center spaceMax">
-        <div className="cards max-w-md flex flex-col gap-4 border rounded-md px-1 sm:px-5 sm:py-6 py-5 mx-2 sm:mx-0 space ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center mx-4 sm:mx-0 ">
+        <div className="cards max-w-sm lg:max-w-md flex flex-col gap-4 border rounded-md px-1 sm:px-5 sm:py-6 py-5   ">
           <div className="hidden sm:flex justify-center items-center">
             <Image
               height={200}
@@ -39,7 +39,7 @@ const Projects = () => {
             </button>
           </div>
         </div>
-        <div className="cards max-w-md flex flex-col gap-4 border rounded-md px-1 sm:px-5 sm:py-6 py-5 mx-2 sm:mx-0 space ">
+        <div className="cards max-w-sm lg:max-w-md flex flex-col gap-4 border rounded-md px-1 sm:px-5 sm:py-6 py-5   ">
           <div className="hidden sm:flex justify-center items-center">
             <Image
               height={200}
@@ -71,7 +71,7 @@ const Projects = () => {
             </button>
           </div>
         </div>
-        <div className="cards max-w-md flex flex-col gap-4 border rounded-md px-1 sm:px-5 sm:py-6 py-5 mx-2 sm:mx-0 space ">
+        <div className="cards max-w-sm lg:max-w-md flex flex-col gap-4 border rounded-md px-1 sm:px-5 sm:py-6 py-5   ">
           <div className="hidden sm:flex justify-center items-center">
             <Image
               height={200}
@@ -103,7 +103,7 @@ const Projects = () => {
             </button>
           </div>
         </div>
-        <div className="cards max-w-md flex flex-col gap-4 border rounded-md px-1 sm:px-5 sm:py-6 py-5 mx-2 sm:mx-0 space ">
+        <div className="cards max-w-sm lg:max-w-md flex flex-col gap-4 border rounded-md px-1 sm:px-5 sm:py-6 py-5   ">
           <div className="hidden sm:flex justify-center items-center">
             <Image
               height={200}

@@ -55,7 +55,7 @@ const SideBar = () => {
             className="cursor-pointer hover:animate-spin"
           />
         </div>
-        <div className="sm:hidden ml-1 bg-slate-300 dark:bg-slate-600 backdrop-blur-sm flex flex-col items-center justify-between gap-6 h-48 py-4 rounded-xl w-8 mt-20">
+        {/* <div className="sm:hidden ml-1 bg-slate-300 dark:bg-slate-600 backdrop-blur-sm flex flex-col items-center justify-between gap-6 h-48 py-4 rounded-xl w-8 mt-20">
           <InstagramIcon
             className="cursor-pointer"
             sx={{ fontSize: "1.4rem" }}
@@ -66,7 +66,7 @@ const SideBar = () => {
             sx={{ fontSize: "1.4rem" }}
           />
           <EmailIcon className="cursor-pointer" sx={{ fontSize: "1.4rem" }} />
-        </div>
+        </div> */}
       </div>
     </section>
   );

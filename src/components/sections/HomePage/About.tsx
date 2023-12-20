@@ -1,9 +1,19 @@
 import Image from "next/image";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
 
 const About = () => {
   return (
     <section className="section ">
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-8 py-8 sm:py-12 sm:px-2 spaceMax">
+      <div className="absolute  sm:hidden ml-1 bg-slate-300 dark:bg-slate-600 backdrop-blur-sm flex flex-col items-center justify-between gap-6 h-48 py-4 rounded-xl w-8 mt-20">
+        <InstagramIcon className="cursor-pointer" sx={{ fontSize: "1.4rem" }} />
+        <GitHubIcon className="cursor-pointer" sx={{ fontSize: "1.4rem" }} />
+        <LinkedInIcon className="cursor-pointer" sx={{ fontSize: "1.4rem" }} />
+        <EmailIcon className="cursor-pointer" sx={{ fontSize: "1.4rem" }} />
+      </div>
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-8 py-8 sm:py-12 sm:px-2">
         <Image
           className="rounded-xl hidden sm:block"
           height={200}
