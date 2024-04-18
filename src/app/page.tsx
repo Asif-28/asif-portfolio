@@ -7,7 +7,7 @@ export default function Home() {
       <SideBar />
       <About />
       <TechStack />
-      <Projects />
+      {/* <Projects /> */}
     </main>
   );
 }

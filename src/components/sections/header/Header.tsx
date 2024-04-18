@@ -6,6 +6,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 
 const Header = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -63,7 +64,9 @@ const Header = () => {
               onMouseLeave={handleMouseLeave}
               className="flex flex-col items-center gap-1 h-[30px]"
             >
-              Home <div className={underlineClass(0)} />
+              <Link href={`/`}>
+                Home <div className={underlineClass(0)} />
+              </Link>
             </li>
             <li
               onMouseEnter={() => handleMouseEnter(1)}
@@ -77,7 +80,9 @@ const Header = () => {
               onMouseLeave={handleMouseLeave}
               className="flex flex-col items-center gap-1 h-[30px]"
             >
-              Portfolio <div className={underlineClass(2)} />
+              <Link href={`/projects`}>
+                Projects <div className={underlineClass(2)} />
+              </Link>
             </li>
             <li
               onMouseEnter={() => handleMouseEnter(3)}
