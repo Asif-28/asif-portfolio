@@ -10,14 +10,7 @@ const TechStack = () => {
         </h1>
         <div className="images">
           <ul>
-            <li>
-              <Image
-                src={`/javascript-fill-svgrepo-com.svg`}
-                height={100}
-                width={100}
-                alt="icn"
-              />
-            </li>
+            <li></li>
           </ul>
         </div>
       </div>
