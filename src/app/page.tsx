@@ -4,7 +4,7 @@ import SideBar from "@/components/sections/sidebar/SideBar";
 export default function Home() {
   return (
     <main className="h-[200vh]">
-      <SideBar />
+      {/* <SideBar /> */}
       <About />
       <TechStack />
       {/* <Projects /> */}
