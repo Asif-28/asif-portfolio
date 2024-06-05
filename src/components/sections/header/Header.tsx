@@ -56,7 +56,7 @@ const Header = () => {
 
   return (
     <section className="sticky z-10 top-1 w-full px-4">
-      <div className="section flex justify-between px-3 sm:px-0 sm:justify-center items-center gap-10 border rounded-xl mt-1 backdrop-blur-sm light:bg-gray-50/50 py-1 sm:py-0 ">
+      <div className="section flex justify-between px-3 sm:px-0 sm:justify-center items-center gap-10 border rounded-xl mt-1 backdrop-blur-md light:bg-gray-50/50 py-1 sm:py-0 ">
         <nav className="sm:flex justify-center items-center py-[1rem] hidden">
           <ul className="flex gap-7 cursor-pointer">
             <li
