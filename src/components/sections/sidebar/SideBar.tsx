@@ -10,24 +10,24 @@ import { useEffect, useRef } from "react";
 const SideBar = () => {
   const el = useRef(null);
 
-  useEffect(() => {
-    const typed = new Typed(el.current, {
-      strings: ["I'm Freelancer", "FullStack Developer", "Mern Developer"], // Strings to display
-      // Speed settings, try diffrent values untill you get good results
-      startDelay: 300,
-      typeSpeed: 100,
-      backSpeed: 100,
-      backDelay: 100,
-      smartBackspace: true,
-      loop: true,
-      showCursor: false,
-    });
+  // useEffect(() => {
+  //   const typed = new Typed(el.current, {
+  //     strings: ["I'm Freelancer", "FullStack Developer", "Mern Developer"], // Strings to display
+  //     // Speed settings, try diffrent values untill you get good results
+  //     startDelay: 300,
+  //     typeSpeed: 100,
+  //     backSpeed: 100,
+  //     backDelay: 100,
+  //     smartBackspace: true,
+  //     loop: true,
+  //     showCursor: false,
+  //   });
 
-    // Destropying
-    return () => {
-      typed.destroy();
-    };
-  }, []);
+  //   // Destropying
+  //   return () => {
+  //     typed.destroy();
+  //   };
+  // }, []);
   return (
     <div className="">
       <div className="fixed xl:left-48 z-50 ">
