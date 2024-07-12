@@ -22,6 +22,7 @@ const About = () => {
             <p className="">Full-Stack Developer</p>
             <p className="text-purple-600">&</p>
             <p>Freelancer</p>
+            {/* <p>Fiverr Developer </p> */}
           </div>
           {/* <p className="text-[15px] sm:text-xl tracking-wider leading-relaxed font-light">
             I&apos;m Passionate and dedicated full-stack Mern developer with
