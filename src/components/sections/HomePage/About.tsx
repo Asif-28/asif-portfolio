@@ -15,13 +15,13 @@ const About = () => {
       </div>
       <div className="flex flex-col-reverse sm:flex-row justify-center items-center gap-8 py-8 sm:py-12 sm:px-2">
         <div className="sm:w-4/6 px-3 space ">
-          <h1 className="text-2xl sm:text-5xl pb-4 font-semibold text-purple-600">
+          <h1 className="text-2xl sm:text-5xl pb-4 font-semibold ">
             Hi, I&apos;m Asif
           </h1>
           <div className="uppercase text-4xl md:text-8xl font-extrabold">
-            <p className="">Full-Stack Developer</p>
-            <p className="text-purple-600">&</p>
-            <p>Freelancer</p>
+            <p className="heading-fullstack">Full-Stack Developer</p>
+            <p className="">&</p>
+            <p className="heading-fullstack">Freelancer</p>
             {/* <p>Fiverr Developer </p> */}
           </div>
           {/* <p className="text-[15px] sm:text-xl tracking-wider leading-relaxed font-light">

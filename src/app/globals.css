@@ -69,3 +69,19 @@
 .spaceMax {
   @apply ml-12 lg:ml-0;
 }
+
+.heading-fullstack {
+  background: linear-gradient(
+    to right, #8360c3, #2ebf91,#8360c3, #2ebf91
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+@keyframes shine {
+  to {
+    background-position: left 200%;
+  }
+}
