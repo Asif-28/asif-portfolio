@@ -1,6 +1,25 @@
-version: '3.8'
+version: '3.9'
+
 services:
+  db:
+    container_name: postgres
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_USER=adminuser
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=portfoliocontact
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    ports:
+      - '5500:5432'
+    networks:
+      - talk
+
   frontend:
+    container_name: frontend
+    depends_on:
+      - db
     build:
       context: .
       dockerfile: Dockerfile.dev
@@ -8,5 +27,12 @@ services:
       - "3000:3000"
     volumes:
       - .:/app
-    # env_file:
-    #   - .env.local
+    networks:
+      - talk
+
+networks:
+  talk:
+    name: talk
+
+volumes:
+  postgres_data:
