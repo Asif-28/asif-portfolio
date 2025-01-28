@@ -8,7 +8,7 @@ const Desc = () => {
           About Me:
         </h1>
         <p className="text-[15px] sm:text-xl tracking-wider leading-relaxed font-light text-justify ">
-          I&apos;m Passionate and dedicated full-stack Mern developer with
+          I&apos;m Passionate and very dedicated full-stack Mern developer with
           expertise in React, Next.js, TypeScript, Node.js, Express, various
           libraries. Skilled in building high-performance web applications and
           crafting seamless front-end and back-end experiences. A virtuoso
